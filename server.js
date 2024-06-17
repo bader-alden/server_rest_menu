@@ -15,6 +15,7 @@ app.use(express.json());
 if (process.env.NODE_ENV == "development") {
   app.use(morgan("dev"));
   console.log(`mode: ${process.env.NODE_ENV}`);
+  console.log(`hello`);
 }
 app.use("/api/v1/MainCategories", MainCategoriesRoute);
 app.use("/api/v1/UserCategories", UserCategoriesRoute);
